@@ -13,7 +13,9 @@ const tableName = process.env.TABLE;
 
 export const handler = async(event) => {
     const params = { TableName: tableName };
-    
+
+    console.log(params);
+
     const data = await dynamo.send(new ScanCommand(params));
     const result = data?.Items || []; 
     const response = {
