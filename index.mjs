@@ -1,10 +1,7 @@
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import {
   DynamoDBDocumentClient,
-  ScanCommand,
-  PutCommand,
-  GetCommand,
-  DeleteCommand,
+  ScanCommand
 } from "@aws-sdk/lib-dynamodb";
 
 const client = new DynamoDBClient({
